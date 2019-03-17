@@ -75,6 +75,7 @@
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
+  cursor: pointer;
 }
 
 .feature-box:hover{
@@ -82,6 +83,7 @@
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
+  cursor: pointer;
 }
 
 .feature_view-img{
@@ -102,13 +104,115 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 0;
+  margin-left: 30px;
 }
 
 .headling-blue{
+  line-height: 75%;
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding: 0;
   font-size: 55px;
   color: #00b1ba;
 }
 
 .slogan{
+  font-size: 30px;
+  color: #fff;
+  margin-top: 20px;
+}
 
+/*Счётчик*/
+
+.counter{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1173px;
+  height: 132px;
+  box-sizing: content-box;
+  background-color: #088389;
+  /*
+  box-shadow: -100em 0 0 #088389,
+               100px 0 0 #088389;  */
+
+
+}
+
+.counter_item{
+  display: block;
+  width: 185px;
+  height: 80px;
+}
+
+.counter-item-number{
+  margin-top: 40px;
+  line-height: 75%;
+  float: left;
+  clear: both;
+  font-size: 72px;
+  color: #fff;
+}
+
+.counter-item-text{
+  margin-top: 40px;
+  float: right;
+  font-size: 20px;
+  color: #fff;
+}
+
+.counter-support{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 22px;
+  width: 270px;
+  height: 93px;
+  background-color: #fff;
+}
+
+.counter-support-number{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 75%;
+  font-size: 72px;
+  color: #000;
+}
+
+.counter-support-text{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 20px;
+  color: #000;
+}
+
+.counter-link{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  justify-content: flex-end;
+  width: 46px;
+  height: 100%;
+  text-align: center;
+  padding-left: .5em;
+  background-color: #00b1ba;
+  font-size: 18px;
+  writing-mode: vertical-lr;
+  transform: rotateZ(180deg);
+}
+
+.counter-link:hover{
+    background-color: #088389;
 }

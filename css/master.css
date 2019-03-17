@@ -17,10 +17,11 @@ html{
   margin: 0 auto;
   padding: 0 3px;
   width: 1173px;
-  max-width: 1920px;
+  max-width: 100%;
 }
 
   /*Конец переопределения*/
+
 
 html,
 body{
@@ -43,8 +44,12 @@ body{
   flex-direction: column;  /*Нужно, чтобы прижать футер к нижней части страницы*/
   margin: 0;
   padding: 0;
-  min-width: 1920px;
-  width: 100%;
+  width: 100vw;
+}
+
+.body_mask{
+  width: inherit;
+  height: 755px;
   background-image: url(../img/slide.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -57,19 +62,21 @@ main{
   padding: 0;
 }
 
-a{
+.link{
   text-decoration: none;
   color: #fff;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
+  cursor: pointer;
 }
 
-a:hover{
+.link:hover{
   color: #00b1ba;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
+  cursor: pointer;
 }
 
 /*Конец обнуления*/
@@ -139,7 +146,7 @@ footer{
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;  /*Нужно, чтобы прижать футер к нижней части страницы*/
-  width: 100%;
+  width: 100vw;
   height: 90px;
   background-color: #00b1ba;
 }
@@ -163,4 +170,33 @@ footer{
   margin: 0;
   font-size: 14px;
   opacity: .5;
+}
+
+/*Настройки полосы прокрутки*/
+::-webkit-scrollbar{                    /*Стиль полосы прокрутки*/
+width: 10px;
+}
+
+::-webkit-scrollbar-thumb{              /*Стиль иконки полосы прокрутки*/
+background-color: #00b1ba60;
+}
+
+::-webkit-scrollbar-thumb:hover{        /*Ховер еффект иконки полосы прокрутки*/
+background-color: #08838960;
+}
+
+::-webkit-scrollbar-track{              /*Стиль полосы прокрутки*/
+
+}
+
+::-webkit-scrollbar-track:hover{        /*Ховер еффект полосы прокрутки*/
+background-color: transparent;
+}
+
+/*Конец настройки полосы прокрутки*/
+
+@media all and (max-width: 1030px){
+  .content_box{
+
+  }
 }
